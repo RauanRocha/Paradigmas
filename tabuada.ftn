@@ -1,0 +1,18 @@
+program tabuada
+    implicit none
+
+    integer :: numero
+    integer :: i
+
+    print *, "Digite um numero:"
+    read *, numero
+
+    print *
+    print *, "Tabuada do ", numero
+    print *, "----------------"
+
+    do i = 1, 10
+        print *, numero, " x ", i, " = ", numero * i
+    end do
+
+end program tabuada
