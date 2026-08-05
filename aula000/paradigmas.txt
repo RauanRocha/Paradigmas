@@ -1,0 +1,2 @@
+Ele é uma linguagem multiparadigma, embora o seu foco seja em imperativo/procedural ele 
+tem suporte a Orientado a Objetos (OO), Programação Modular e Programação Paralela
