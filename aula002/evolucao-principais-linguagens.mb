@@ -69,6 +69,8 @@ Em Lisp, a lista é uma estrutura central tanto para representar dados quanto pa
 
 Portanto, Fortran prioriza eficiência e clareza para computação numérica, enquanto Lisp prioriza flexibilidade para processamento simbólico. A diferença entre elas ilustra novamente que a evolução das linguagens responde a domínios distintos, e não a uma única escala de superioridade.
 
+
+
 ## 15. A mudança de contexto e a adoção de Java
 
 Java não foi criada inicialmente para a Web. Seu projeto começou na Sun Microsystems com o objetivo de atender dispositivos eletrônicos de consumo, nos quais era importante executar o mesmo programa em diferentes processadores. Por isso, a linguagem e sua máquina virtual foram orientadas à portabilidade, à segurança e à independência da arquitetura.
@@ -76,6 +78,8 @@ Java não foi criada inicialmente para a Web. Seu projeto começou na Sun Micros
 A expansão da Web criou um contexto no qual essas características se tornaram especialmente valiosas. Os applets permitiam distribuir código pela rede e executá-lo em ambientes diferentes, apoiando-se na máquina virtual Java. A linguagem passou, então, de uma tecnologia voltada a dispositivos de consumo para uma plataforma associada a aplicações Web, servidores e sistemas corporativos.
 
 Esse caso mostra que o posicionamento de uma linguagem não depende somente de sua intenção original. Mudanças tecnológicas, novos mercados e necessidades emergentes podem transformar uma característica já existente em uma vantagem decisiva. A portabilidade de Java não mudou, mas seu significado e seu público mudaram com o crescimento da Web.
+
+
 
 ## 16. Perl, JavaScript, PHP, Python, Ruby e Lua
 
@@ -92,6 +96,8 @@ Embora todas possam ser usadas como linguagens de script, elas não são equival
 
 Assim, “scripting” descreve uma forma comum de uso, mas não determina o domínio, o modelo de dados nem o mecanismo de execução. JavaScript se especializou na interação com ambientes Web; PHP, na geração dinâmica no servidor; Lua, na extensão de aplicações; e Python e Ruby, em expressividade e produtividade geral.
 
+
+
 ## 17. Decisões de projeto de C#
 
 Uma primeira decisão de C# foi oferecer **propriedades** como uma forma sintética de encapsular acesso a atributos. Em C++, é comum expor campos ou escrever manualmente métodos `get` e `set`; em Java, a convenção também costuma exigir métodos como `getNome()` e `setNome()`. C# mantém o controle de encapsulamento, mas permite que a interface de uso se pareça com o acesso a um campo. O objetivo é reduzir código repetitivo sem abandonar validação, cálculo ou controle de leitura e escrita.
@@ -100,6 +106,8 @@ Uma segunda decisão foi integrar **delegates e eventos** à linguagem. Em C++, 
 
 Essas escolhas exemplificam a posição de C# no ambiente .NET: aproveitar ideias de C++, Java e outras linguagens, mas oferecer abstrações mais integradas ao ambiente, com segurança de tipos e menor quantidade de código incidental.
 
+
+
 ## 18. XSLT e JSP
 
 **XSLT** recebe um documento XML como entrada e aplica regras de transformação sobre sua estrutura. O processamento é orientado à seleção e à correspondência de elementos, atributos e padrões. A saída pode ser outro XML, HTML ou texto. Seu objetivo principal é transformar uma representação de dados em outra apresentação ou representação.
@@ -107,6 +115,8 @@ Essas escolhas exemplificam a posição de C# no ambiente .NET: aproveitar ideia
 **JSP** recebe uma requisição Web e utiliza uma página que combina marcação, normalmente HTML, com elementos capazes de executar código Java ou acessar componentes do servidor. O processamento ocorre no servidor, e a saída costuma ser uma página HTML dinâmica enviada ao navegador.
 
 As duas podem ser chamadas de linguagens híbridas de marcação e programação porque misturam uma linguagem de marcação, usada para descrever a estrutura da entrada ou da saída, com mecanismos computacionais. A diferença é que XSLT é predominantemente declarativa e orientada à transformação de XML, enquanto JSP é uma tecnologia de geração de páginas que incorpora processamento procedural ou orientado a objetos no fluxo de uma página Web.
+
+
 
 ## 19. Linha do tempo e influências
 
@@ -124,6 +134,8 @@ Perl (1987) ──► Python (1991) ──► Java (1995) ──► JavaScript (
 ```
 
 As ligações não significam apenas que uma linguagem veio depois da outra. Lisp influenciou linguagens funcionais e recursos de processamento simbólico; Smalltalk consolidou a orientação a objetos baseada em mensagens; Prolog representa uma linha declarativa lógica; Perl combinou ideias de ferramentas de texto e shell; Python absorveu recursos de vários paradigmas com foco em legibilidade; e Java e JavaScript responderam a necessidades de portabilidade, distribuição e interação na Web.
+
+
 
 ## 20. Estudo de caso: escolha de tecnologias
 
