@@ -1,0 +1,71 @@
+# Evolução das Principais Linguagens de Programação
+
+
+
+## 1. A genealogia das linguagens não é uma escada de progresso
+
+Dizer que a genealogia das linguagens não é uma escada de progresso significa reconhecer que as linguagens não formam uma sequência em que cada versão nova torna a anterior inútil ou inferior. Elas surgem para atender necessidades diferentes, como cálculo científico, processamento comercial, inteligência artificial, sistemas embarcados ou ensino. Por isso, uma linguagem pode ser tecnicamente antiga e continuar adequada ao seu domínio.
+
+Dois fatores históricos ajudam a explicar por que uma linguagem influencia outra sem substituí-la:
+
+- **Necessidades e domínios diferentes:** uma linguagem pode introduzir uma solução importante para um problema específico. Fortran, por exemplo, foi projetada para computação numérica, enquanto Lisp favoreceu manipulação simbólica. A influência de uma não elimina a utilidade da outra.
+- **Investimento e compatibilidade:** programas existentes, treinamento de equipes, bibliotecas, compiladores e custos de migração criam dependência histórica. Mesmo quando uma linguagem nova oferece recursos melhores, a antiga pode permanecer por causa do código já produzido e do ecossistema formado ao seu redor.
+
+Assim, a evolução ocorre por acumulação, adaptação e especialização, e não apenas por substituição linear.
+
+
+
+
+## 2. A relevância de Plankalkül
+
+Plankalkül é relevante porque mostrou que ideias avançadas podiam ser planejadas antes de existirem computadores, compiladores e ferramentas capazes de implementá-las. O projeto de Konrad Zuse antecipou vários conceitos que depois apareceriam em linguagens de uso prático.
+
+Entre os recursos antecipados estão:
+
+1. tipos de dados compostos, incluindo estruturas e registros;
+2. uso de arrays e operações sobre conjuntos de valores;
+3. representação de valores booleanos e operações lógicas;
+4. separação entre dados e operações por meio de uma notação próxima de uma linguagem de alto nível.
+
+Um exemplo importante é o uso de estruturas de dados compostas. Em vez de tratar todas as informações como valores isolados, o programa poderia organizar campos relacionados em uma única unidade. Isso facilita a modelagem de problemas complexos e influenciou a forma como linguagens posteriores representam registros, objetos e outras estruturas.
+
+
+
+
+## 3. Short Code, Speedcoding e A-0/A-1/A-2
+
+Os três casos tentavam reduzir o esforço de programar os primeiros computadores, mas adotavam estratégias diferentes.
+
+**Short Code** procurava substituir a programação direta em linguagem de máquina por uma notação com fórmulas e operações mais próximas da escrita humana. O sistema, porém, precisava interpretar essas instruções durante a execução, o que reduzia o desempenho.
+
+**Speedcoding**, desenvolvido para o IBM 701, também oferecia abreviações e operações de mais alto nível para facilitar a programação. Sua estratégia era economizar tempo e memória de programação, aceitando limitações e custos de execução decorrentes da interpretação e do uso de rotinas predefinidas.
+
+**A-0, A-1 e A-2**, associados ao trabalho de Grace Hopper, buscavam automatizar a utilização de subprogramas e rotinas armazenadas. O programador podia indicar operações e referências a rotinas, deixando parte do trabalho de localização e ligação para o sistema. A evolução entre as versões aumentou essa capacidade de automação.
+
+Chamá-los simplesmente de compiladores modernos seria impreciso porque eles não apresentavam necessariamente a mesma tradução geral, a mesma análise sintática e a mesma geração otimizada de código de um compilador contemporâneo. Alguns eram interpretadores ou sistemas de montagem e ligação de rotinas, voltados a problemas específicos. Eles foram etapas experimentais na automação da programação, e não versões completas do modelo atual de compilação.
+
+
+
+
+## 4. O desafio de adoção do Fortran
+
+Quando Fortran foi projetada, muitos programadores escreviam código de máquina ou assembly manualmente e acreditavam que uma tradução automática produziria programas lentos. O projeto precisava demonstrar que uma linguagem mais próxima da notação matemática poderia gerar código suficientemente eficiente para competir com esse trabalho artesanal.
+
+Esse convencimento era essencial porque a principal vantagem de Fortran era reduzir o custo de programação: o programador escreveria menos instruções, teria maior produtividade e poderia manter o código com mais facilidade. Entretanto, se o desempenho fosse muito inferior, essa economia não compensaria o tempo adicional de execução e o custo do hardware.
+
+O compilador de Fortran foi, portanto, desenvolvido com forte preocupação com a qualidade do código gerado. A adoção ocorreu quando os usuários perceberam que poderiam obter desempenho próximo ao código escrito à mão, mas com uma redução significativa no esforço de desenvolvimento. O caso mostra que a aceitação de uma linguagem depende da combinação entre produtividade, desempenho e confiança na implementação.
+
+
+
+
+
+## 5. Fortran e Lisp
+
+Fortran e Lisp surgiram em contextos e para finalidades bastante diferentes. Fortran foi criada principalmente para cálculos científicos e numéricos, especialmente em operações com fórmulas, vetores e matrizes. Lisp surgiu no contexto da inteligência artificial e da manipulação de símbolos.
+
+Em Fortran, a representação de dados favorece números, variáveis escalares e arrays com posições bem definidas. O estilo de computação é predominantemente procedimental e imperativo: o programa descreve uma sequência de cálculos e atribuições que transforma valores.
+
+Em Lisp, a lista é uma estrutura central tanto para representar dados quanto para representar expressões do próprio programa. Isso permite manipular símbolos, árvores e outras estruturas flexíveis. Seu estilo favorece funções, recursão, composição de operações e avaliação de expressões, características especialmente úteis em problemas cuja estrutura não é apenas numérica.
+
+Portanto, Fortran prioriza eficiência e clareza para computação numérica, enquanto Lisp prioriza flexibilidade para processamento simbólico. A diferença entre elas ilustra novamente que a evolução das linguagens responde a domínios distintos, e não a uma única escala de superioridade.
+
