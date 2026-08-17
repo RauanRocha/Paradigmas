@@ -69,3 +69,70 @@ Em Lisp, a lista é uma estrutura central tanto para representar dados quanto pa
 
 Portanto, Fortran prioriza eficiência e clareza para computação numérica, enquanto Lisp prioriza flexibilidade para processamento simbólico. A diferença entre elas ilustra novamente que a evolução das linguagens responde a domínios distintos, e não a uma única escala de superioridade.
 
+## 15. A mudança de contexto e a adoção de Java
+
+Java não foi criada inicialmente para a Web. Seu projeto começou na Sun Microsystems com o objetivo de atender dispositivos eletrônicos de consumo, nos quais era importante executar o mesmo programa em diferentes processadores. Por isso, a linguagem e sua máquina virtual foram orientadas à portabilidade, à segurança e à independência da arquitetura.
+
+A expansão da Web criou um contexto no qual essas características se tornaram especialmente valiosas. Os applets permitiam distribuir código pela rede e executá-lo em ambientes diferentes, apoiando-se na máquina virtual Java. A linguagem passou, então, de uma tecnologia voltada a dispositivos de consumo para uma plataforma associada a aplicações Web, servidores e sistemas corporativos.
+
+Esse caso mostra que o posicionamento de uma linguagem não depende somente de sua intenção original. Mudanças tecnológicas, novos mercados e necessidades emergentes podem transformar uma característica já existente em uma vantagem decisiva. A portabilidade de Java não mudou, mas seu significado e seu público mudaram com o crescimento da Web.
+
+## 16. Perl, JavaScript, PHP, Python, Ruby e Lua
+
+Embora todas possam ser usadas como linguagens de script, elas não são equivalentes. Seus domínios de origem, estruturas de dados e estratégias de implementação são diferentes.
+
+| Linguagem | Domínio inicial | Estruturas de dados marcantes | Estratégia de implementação |
+| --- | --- | --- | --- |
+| **Perl** | Administração de sistemas, processamento de texto e arquivos | Strings, arrays, hashes e expressões regulares | Geralmente interpretada, com compilação para uma forma interna antes da execução |
+| **JavaScript** | Scripts em navegadores e interação com documentos Web | Objetos associativos, arrays e funções como valores | Implementada por um motor de execução; historicamente interpretada e, depois, frequentemente compilada dinamicamente por JIT |
+| **PHP** | Geração de páginas e scripts no lado do servidor Web | Arrays associativos, strings e objetos | Processada pelo servidor, normalmente convertida em representação interna e executada pelo mecanismo da linguagem |
+| **Python** | Automação, ensino, prototipação e aplicações gerais | Listas, dicionários, tuplas, conjuntos e objetos | Código-fonte convertido para bytecode e executado por uma máquina virtual |
+| **Ruby** | Scripts, produtividade do programador e desenvolvimento Web | Tudo é tratado como objeto; arrays, hashes, blocos e classes são centrais | Executada por uma máquina virtual, com interpretação e otimizações dependendo da implementação |
+| **Lua** | Extensão e configuração de aplicações, jogos e sistemas embarcados | Tabelas, que podem representar arrays, mapas e objetos | Projetada para ser embutida; o código costuma ser compilado para bytecode e executado por uma máquina virtual leve |
+
+Assim, “scripting” descreve uma forma comum de uso, mas não determina o domínio, o modelo de dados nem o mecanismo de execução. JavaScript se especializou na interação com ambientes Web; PHP, na geração dinâmica no servidor; Lua, na extensão de aplicações; e Python e Ruby, em expressividade e produtividade geral.
+
+## 17. Decisões de projeto de C#
+
+Uma primeira decisão de C# foi oferecer **propriedades** como uma forma sintética de encapsular acesso a atributos. Em C++, é comum expor campos ou escrever manualmente métodos `get` e `set`; em Java, a convenção também costuma exigir métodos como `getNome()` e `setNome()`. C# mantém o controle de encapsulamento, mas permite que a interface de uso se pareça com o acesso a um campo. O objetivo é reduzir código repetitivo sem abandonar validação, cálculo ou controle de leitura e escrita.
+
+Uma segunda decisão foi integrar **delegates e eventos** à linguagem. Em C++, ponteiros para funções e padrões de callback podem cumprir função semelhante, mas exigem mais detalhes de implementação. Em Java, interfaces e classes anônimas tradicionalmente eram usadas para representar callbacks. C# fornece um tipo seguro para referências a métodos e um modelo próprio para eventos, facilitando a comunicação entre objetos e o desenvolvimento de interfaces gráficas.
+
+Essas escolhas exemplificam a posição de C# no ambiente .NET: aproveitar ideias de C++, Java e outras linguagens, mas oferecer abstrações mais integradas ao ambiente, com segurança de tipos e menor quantidade de código incidental.
+
+## 18. XSLT e JSP
+
+**XSLT** recebe um documento XML como entrada e aplica regras de transformação sobre sua estrutura. O processamento é orientado à seleção e à correspondência de elementos, atributos e padrões. A saída pode ser outro XML, HTML ou texto. Seu objetivo principal é transformar uma representação de dados em outra apresentação ou representação.
+
+**JSP** recebe uma requisição Web e utiliza uma página que combina marcação, normalmente HTML, com elementos capazes de executar código Java ou acessar componentes do servidor. O processamento ocorre no servidor, e a saída costuma ser uma página HTML dinâmica enviada ao navegador.
+
+As duas podem ser chamadas de linguagens híbridas de marcação e programação porque misturam uma linguagem de marcação, usada para descrever a estrutura da entrada ou da saída, com mecanismos computacionais. A diferença é que XSLT é predominantemente declarativa e orientada à transformação de XML, enquanto JSP é uma tecnologia de geração de páginas que incorpora processamento procedural ou orientado a objetos no fluxo de uma página Web.
+
+## 19. Linha do tempo e influências
+
+Uma linha do tempo possível, reunindo paradigmas imperativos, funcionais, orientados a objetos, lógicos e de script, é:
+
+```text
+Fortran (1957) ──► Lisp (1958) ──► Smalltalk (1970s) ──► Prolog (1972)
+                                      │                         │
+                                      └─ influência OO           └─ influência lógica
+
+Perl (1987) ──► Python (1991) ──► Java (1995) ──► JavaScript (1995)
+    │               │                │                 │
+    └─ texto/shell  └─ clareza e     └─ VM, tipos e     └─ scripts no
+                    estruturas      portabilidade      navegador
+```
+
+As ligações não significam apenas que uma linguagem veio depois da outra. Lisp influenciou linguagens funcionais e recursos de processamento simbólico; Smalltalk consolidou a orientação a objetos baseada em mensagens; Prolog representa uma linha declarativa lógica; Perl combinou ideias de ferramentas de texto e shell; Python absorveu recursos de vários paradigmas com foco em legibilidade; e Java e JavaScript responderam a necessidades de portabilidade, distribuição e interação na Web.
+
+## 20. Estudo de caso: escolha de tecnologias
+
+Para **cálculo científico**, a escolha histórica mais direta seria a família Fortran, eventualmente combinada com bibliotecas numéricas. Fortran nasceu para expressar fórmulas e operações sobre arrays e foi projetada para gerar código eficiente. O trade-off é obter excelente desempenho e suporte numérico, mas com menor flexibilidade para aplicações gerais e estruturas simbólicas complexas.
+
+Para **regras declarativas**, Prolog é uma escolha coerente. Sua base de fatos, regras e mecanismo de inferência permite descrever relações e perguntas sem especificar passo a passo todo o algoritmo. O trade-off é ganhar concisão em problemas de busca e conhecimento, mas depender de um modelo de execução menos natural para cálculos numéricos, controle de baixo nível ou algoritmos imperativos.
+
+Para uma **aplicação Web interativa**, a combinação de JavaScript no navegador com uma linguagem de servidor, como PHP, é historicamente adequada. JavaScript foi criado para scripts no cliente e interação com documentos Web, enquanto PHP foi direcionada à geração dinâmica de páginas no servidor. O trade-off é aproveitar a especialização de cada ambiente, mas aceitar maior complexidade de integração, diferenças entre cliente e servidor e preocupações adicionais de segurança.
+
+Para **firmware restrito**, C ou uma linguagem próxima da família C é uma escolha adequada, pois oferece controle sobre memória, representação de dados e operações de baixo nível, com pouca sobrecarga de execução. Em sistemas que precisam de portabilidade e abstrações mais seguras, uma linguagem compilada com suporte ao ambiente embarcado também pode ser considerada. O trade-off é obter controle e previsibilidade de recursos ao custo de maior responsabilidade do programador por memória, concorrência e segurança.
+
+Historicamente, as escolhas não devem ser feitas pela ideia de que existe uma linguagem universalmente melhor. Cada família surgiu para equilibrar objetivos diferentes: Fortran prioriza computação numérica; Prolog, inferência; JavaScript e PHP, processamento Web; e C, controle e eficiência em sistemas restritos.
